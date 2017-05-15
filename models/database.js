@@ -1,5 +1,5 @@
 const pg = require('pg');
-const connectionString = process.env.HEROKU_POSTGRESQL_ORANGE_URL || 'postgres://hjy:1234567890@localhost:5432/node_hero';
+const connectionString = process.env.DATABASE_URL || 'postgres://hjy:1234567890@localhost:5432/node_hero';
 const client = new pg.Client(connectionString);
 client.connect();
 const query = client.query(

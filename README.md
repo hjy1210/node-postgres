@@ -16,6 +16,11 @@ Following article [Getting Started on Heroku with Node.js](https://devcenter.her
 6. node_hero=>INSERT INTO items(text, complete) values('Hon', true);
 7. Implement a restful website with express-generator.
 
+Note: Default encoding of command prompt is auto, which can not display utf8 characters when using psql. Walk around methods are:
+1. chcp 65001
+2. set PGCLIENTENCODING=utf8
+3. psql *database*
+
 ## test application
 
 ## create remote website with postgres add-on
